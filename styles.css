@@ -1,0 +1,126 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: row; /* Horizontal alignment */
+}
+
+.profile-picture {
+    width: 200px;
+    padding: 1rem;
+    margin-right: 1rem;;
+    background-color: rgb(249, 255, 162);
+}
+
+.profile-text {
+    font-size: 1rem;
+}
+
+.light-purple-box {
+    background-color: #e6e6fa;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 200px;
+    height: 189px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.project-card.project1 {
+    background-color: #7577ff;
+    width: 150px;
+    height: 200px;
+}
+
+.project-card.project2 {
+    background-color: #ff7777;
+    width: 150px;
+    height: 200px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Set the maximum width for the images */
+}
+
+footer a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .project-card {
+        padding: 0.5rem;
+    }
+
+    .projects-container {
+        flex-direction: column; /* Vertical alignment for small screens */
+    }
+
+    .profile-container {
+        flex-direction: column; /* Vertical alignment for small screens */
+    }
+}
