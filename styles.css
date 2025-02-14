@@ -33,7 +33,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    flex-direction: row; /* Horizontal alignment */
+    flex-direction: row;
 }
 
 .profile-picture {
@@ -65,7 +65,7 @@ footer {
 
 .projects-container {
     display: flex;
-    flex-direction: row; /* Horizontal alignment */
+    flex-direction: row;
 }
 
 .project-card {
@@ -89,7 +89,7 @@ footer {
 .project-card img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Set the maximum width for the images */
+    max-width: 200px;
 }
 
 footer a {
@@ -98,7 +98,6 @@ footer a {
     text-decoration: none;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     header, footer {
         padding: 0.5rem;
@@ -117,10 +116,10 @@ footer a {
     }
 
     .projects-container {
-        flex-direction: column; /* Vertical alignment for small screens */
+        flex-direction: column; 
     }
 
     .profile-container {
-        flex-direction: column; /* Vertical alignment for small screens */
+        flex-direction: column; 
     }
 }
